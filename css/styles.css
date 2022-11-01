@@ -1,25 +1,49 @@
+:root{
+  --azul: #0092E4;
+}
+
 nav{
   background-color: #f2f2f2;
   position: fixed;
   display: flex;
   height: 100vh;
   align-items: center;
-  top:0;
-  left: 0;
 
 }
 nav ul{
-  /*background-color: yellow;*/
+  /* background-color: yellow; */
   padding: 0px;
 }
 nav ul li {
   list-style: none;
-  /*background-color: blue;*/
+   /* background-color: blue;  */
   padding: 10px;
 }
 nav ul li img {
   width: 30px;
   aspect-ratio: 1/1;
   cursor: pointer;
+  
+}
+
+/*----Responsive----*/
+@media screen and (max-width:540px) {
+  nav{
+    padding: 0px;
+    bottom: 0;
+    height: auto !important;
+    width: 100vw;
+    justify-content: center;
+    
+  }
+  nav ul{
+    padding: 5px;
+    display: flex;
+    margin-bottom: -5px;
+  }
+  nav ul li img{
+    width: 35px;
+  }
+
   
 }
