@@ -1,14 +1,39 @@
 :root{
   --azul: #0092E4;
+  --twitter:#15202B;
+  --twitterLine:#8b98a5;
 }
 
+@font-face {
+  font-family: social;
+  src: url(../font/social.ttf);
+}
+@font-face {
+  font-family: cascadia;
+  src: url(../font/CascadiaCode.ttf);
+}
+body{
+  background-color: var(--twitter);
+}
+    body::-webkit-scrollbar{
+    background-color: var(--twitterLine);
+    width: 8px;
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--azul);
+  border-radius: 20px;
+  margin: 1px;
+  border: 2.5px solid var(--twitterLine);
+}
 nav{
-  background-color: #f2f2f2;
   position: fixed;
   display: flex;
   height: 100vh;
   align-items: center;
   z-index: 1;
+  background-color: var(--twitter);
+  border-right: 1px solid var(--twitterLine);
 
 }
 nav ul{
@@ -28,15 +53,61 @@ nav ul li img {
 }
 
 /*----Home----*/
+.bannerVideo{
+  opacity: 0;
+  transition: 1s;
+}
+.contentainerBannerInfo{
+  width: 100%;
+  height: 99%;
+  background:rgba(0, 0, 0, 0.50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+}
+
+.contentainerBannerInfo img{
+  width: 250px;
+  margin-bottom: 20px;
+  aspect-ratio: 1/1;
+  border: 10px solid #fff;
+  border-radius: 150px;
+}
+.contentainerBannerInfo h1{
+  color: #fff;
+  font-family: cascadia;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.socialIcons a{
+  font-family: social;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 0px 20px;
+  color: #fff;
+  
+}
+
+.socialIcons a:hover{
+  color: var(--azul);
+  transition: .25s;
+}
+
+
 video{
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/7.3;
+  object-fit: cover;
 }
 
 
 /*----Responsive----*/
-@media screen and (max-width:540px) {
+@media screen and (max-width:768px) {
   nav{
+    border-top: 1px solid var(--twitterLine);
     padding: 0px;
     bottom: 0;
     height: auto !important;
@@ -48,10 +119,44 @@ video{
     padding: 5px;
     display: flex;
     margin-bottom: -5px;
+    width: 100%;
+    justify-content: space-around;
   }
   nav ul li img{
     width: 35px;
   }
 
+  /*----Banner Video Responsive----*/
+  video{
+    aspect-ratio: 16/11;
+  }
+  .contentainerBannerInfo img{
+    width: 180px;
+  }
+  .contentainerBannerInfo h1{
+    font-size: 30px;
+    
+  }
+
   
+}
+
+@media screen and (max-width:500px){
+
+  video{
+    aspect-ratio: 6/5;
+  }
+  .contentainerBannerInfo img{
+    width: 130px;
+    border: 5px solid #fff;
+  }
+  .contentainerBannerInfo h1{
+    font-size: 18px;
+    
+  }
+  .contentainerBannerInfo a{
+    font-size: 35px;
+    
+  }
+
 }
