@@ -13,22 +13,24 @@
 
     <nav>
         <ul>
-            <li><img title="Home" id="btnHome" src="./img/icons/home-hover.png"></li>
-            <li><img title="Sobre mi" id="btnAbout" src="./img/icons/about-me.png"></li>
-            <li><img title="Estudios" id="btnBook" src="./img/icons/book.png"></li>
-            <li><img title="Experiencia" id="btnWork" src="./img/icons/work.png"></li>
-            <li><img title=" Proyectos" id="btnProyects" src="./img/icons/proyects.png"></li>
+            <li><a href="#home"><img title="Home" class="iconNav btnHome" src="./img/icons/home-hover.png"></a></li>
+            <li><a href="#sobreMi"><img title="Sobre mi" class="iconNav btnAbout" src="./img/icons/about-me.png"></a></li>
+            <li><img title="Estudios" class="iconNav btnBook" src="./img/icons/book.png"></li>
+            <li><img title="Experiencia" class="iconNav btnWork" src="./img/icons/work.png"></li>
+            <li><img title=" Proyectos" class="iconNav btnProyects" src="./img/icons/proyects.png"></li>
         </ul>
     </nav>
     <div class="container-fluid">
         <div class="row px-0">
+            <label id="home"></label>
             <div class="col-12 px-0">
                <div class="bannerVideo position-relative">
                 <video autoplay loop muted src="./img/Video/coding2.mp4"></video>
                 <div class="contentainerBannerInfo position-absolute top-0 start-0">
                     <div>
                         <img src="./img/images/profile.jpg" alt="">
-                        <h1>Hola! Me llamo Jasubi Piñeyro <br> Soy Front End Developer</h1>
+                        <h1>Me llamo Jasubi Piñeyro</h1>
+                        <h2>Soy Front-end Developer</h2>
                         <span class="socialIcons">
                             <a target="_blank" href="https://www.linkedin.com/in/jasubip/">i</a>
                             <a target="_blank" href="https://twitter.com/JasubiP">t</a>
@@ -40,8 +42,38 @@
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-lg-1"></div>
+            <div class="col-12 col-lg-10 ">
+                <div class="row sobreMi">
+                    <div class="col-12 col-md-7">
+                        <span>Sobre mi</span>
+                        <p>
+                            ¡Hola! Mi nombre completo es Jasubi Lehem Piñeyro Legaspi y como ya leíste en la cabecera de esta web, soy Front-end developer, tengo 25 años actualmente, soy casado y tengo 2 hijos. Actualmente, trabajo para la empresa de transportes "ETN Turistar Lujo" en el área de marketing como analista web, en donde mis principales actividades son crear landing pages y maquetar mailing. <br><br>
+Me dedico a la programación web desde los 15 años, comencé en el mundo de la informática, pasando por varias áreas de la misma como soporte técnico, redes informáticas y por supuesto, programación.
+Empece con HTML y CSS y me mantuve así por varios años, fue hasta los 20 años que decidí dedicarme de lleno al desarrollo web y aprender JavaScript, PHP y MySQL, cabe resaltar que todo lo he aprendido de forma autodidacta. <br><br>
+He probado otros lenguajes por curiosidad como C++, Python y Rust los cuales tengo pensado aprender en un futuro debido al gran interés que tengo en Inteligencia Artificial. <br>
+Actualmente, me encuentro estudiando React, NodeJS, Mongo DB, Linux he inglés y mi meta es convertirme en Software Engineer.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <span>Tecnologias</span>
+                        <div class="tecGaleria">
+                            <img src="./img/images/HTML.png" alt="">
+                            <img src="./img/images/CSS.png" alt="">
+                            <img src="./img/images/JavaScript.png" alt="">
+                            <img src="./img/images/GIT.png" alt="">
+                            <img src="./img/images/MySQL.png" alt="">
+                            <img src="./img/images/PHP.png" alt="">
+                            <img src="./img/images/LINUX.png" alt="">
+                        </div>
+                    </div>
+                    <label id="sobreMi"></label>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12"></div>
+        </div>
     </div>
-    <h1>fdwkpfmklsmkl</h1>
     <!-- JavaScript Bundle with Popper -->
 <script src="./js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
